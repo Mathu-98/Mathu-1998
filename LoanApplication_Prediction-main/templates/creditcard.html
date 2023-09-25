@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   
+	<meta property="og:site_name" content="" /> 
+	<meta property="og:site" content="" /> 
+	<meta property="og:title" content=""/> 
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="" /> 
+	<meta property="og:url" content="" />
+	<meta property="og:type" content="article" />
+
+   
+    <title>Credit Card User Applicantion Form</title>
+ 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
+	<link href="{{url_for('static', filename='css/styles.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/fontawesome-all.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/swiper.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/magnific-popup.css')}}" rel="stylesheet">
+	<link href="{{url_for('static', filename='css/bootstrap.css')}}" rel="stylesheet">
+
+	
+	
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    <center>
+    
+  
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    
+    
+
+    
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+        
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        
+
+         <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+      
+
+       
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+      
+    </nav> 
+	    </nav> 
+
+    
+
+
+   
+    <header id="header" class="ex-header" style="background-color: black;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 >Credit Card User Applicantion</h1>
+                </div> 
+            </div> 
+        </div> 
+    </header> 
+    
+
+
+
+    <div class="ex-basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumbs">
+                        <a href="/">Home</a><i class="fa fa-angle-double-right"></i><span>Credit Card User Prediction</span>
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </div> 
+    
+
+
+   
+   
+    <div id="Predict" class="ex-basic-2">
+		<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp Please Fill in the details to get your credit card user</h4>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-container">
+						
+                            
+								<form id="contactForm"  action="{{ url_for('Credit_card') }}" method="POST">
+								
+                                <div class="form-group">
+                                    <input  type='number' name="Balance"  class="form-control-input" required select>
+                                    <label class="label-control" for="Balance">Balance</label>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type='number' name="Purchases"  class="form-control-input" required select>
+                                    <label class="label-control" for="Purchases"> Purchases</label>
+                                    
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <input  type='number' name="Installments_Purchases"  class="form-control-input" required select>
+                                    <label class="label-control" for="Installments_Purchases">Installments_Purchases</label>
+                                    
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type='number' name="Cash_Advance"  class="form-control-input" required select>
+                                    <label class="label-control" for="Cash_Advance">Cash_Advance</label>
+            
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                                
+
+                                <div class="form-group">
+                                    <input type='number' name="Purchases_trx"  class="form-control-input" required select>
+                                    <label class="label-control" for="Purchases_trx"> Purchases_trx</label>
+                                   
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <input  type='number' name="Cash_Advance_trx" class="form-control-input" required select>
+                                    <label class="label-control" for="Cash_Advance_trx"> Cash_Advance_trx</label>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <input  type='number' name="Credit_Limit"  class="form-control-input" required select>
+                                    <label class="label-control" for="Credit_Limit"> Credit_Limit</label>
+                                    
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <input  type='number' name="Payments"  class="form-control-input" required select>
+                                    <label class="label-control" for="Payments"> Payments</label>
+                                    
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+
+
+                                <div class="form-group">
+                                    <input  type='number' name="Payments_Proportion"  class="form-control-input" required select>
+                                    <label class="label-control" for="Payments_Proportion"> Payments_Proportion</label>
+                                    
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+
+
+                                <div class="form-group">
+                                    <input  type='number' name="Tenure"  class="form-control-input" required select>
+                                    <label class="label-control" for="Tenure"> Tenure</label>
+                                    
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                              
+
+
+
+
+                                
+								
+							
+                  
+                    <button type="submit" class="form-control-submit-button" style="background-color: black;">MAKE PREDICTION</button>
+					</form>
+                </center>
+					</div> 
+            
+				<div class="result" align="center">
+						{% if result %}
+						<br>credit card user:
+						<p style="font-size:20px">{{ result }}</p>
+						{% endif %}
+				</div>
+		</div>
+    </div> 
+
+
+    
+
+    
+
+   
+     <script src="{{url_for('static', filename='js/jquery.min.js')}}"></script> 
+	<script src="{{url_for('static', filename='js/popper.min.js')}}"></script> 
+    <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script> 
+    <script src="{{url_for('static', filename='js/jquery.easing.min.js')}}"></script> 
+    <script src="{{url_for('static', filename='js/jquery.magnific-popup.js')}}"></script> 
+    <script src="{{url_for('static', filename='js/morphext.min.js')}}"></script> 
+    <script src="{{url_for('static', filename='js/isotope.pkgd.min.js')}}"></script> 
+    <script src="{{url_for('static', filename='js/validator.min.js')}}"></script> 
+	<script src="{{url_for('static', filename='js/scripts.js')}}"></script> 
+	<script src="{{url_for('static', filename='js/swiper.min.js')}}"></script> 
+</center>
+</body>
+</html>
